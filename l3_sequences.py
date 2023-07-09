@@ -31,15 +31,63 @@
 # print(tuple_example, id(tuple_example))
 # list_from_tuple = list(tuple_example)
 # print(list_from_tuple)
+# t =  (3, 6, "dima", (3, 6, "dima"))
+# print(t, type(t))
 
 # for i in [4, 8, 9, "Dima"]:  # for loop takes any iterable object
 #       print(i)
 
 
-#  dictionary
-dictionary = dict()
-print(dictionary)
+# #  dictionary
+# dictionary = dict()
+# print(dictionary, type(dictionary))
+# d1 = {1: 'a', 2: 'b', 'third': 5, 9.9: "float", 'a': str, 1: "One"}  # dictionary -- is data type
+#                                                                     # that have key and value
+# print(d1, type(d1), id(d1))
+# print(d1[2], d1['third'])
+# d1["new_val"] = 56
+# print(d1, type(d1), id(d1))
+# d1['a'] = "Any value"
+# print(d1, type(d1), id(d1))
+# for i in d1:
+#     print(f'key = {i} val = {d1[i]}')
+#
+# a, b = (1, 8)
+# print(a, b)
+# unzip_d1 = d1.items()
+# print(unzip_d1)
+# for k, v in d1.items():
+#     print(k, v)
+# print(d1.get(9), d1.get(9.9), d1.get(2))
+# v = d1.pop(2)
+# print(v)
+# print(d1, type(d1), id(d1))
+# print(d1.keys())  # get all keys
+# print(d1.values())  # get all values
+# d2 = d1.fromkeys((4, 6, 2), "value")
+# print(d2, type(d2))
+# d1[(4, 6)] = (4, 6)
+# print(d1, type(d1), id(d1))
+# # d1[[4, 7]] = [4, 7]  # key can be only immutable value
+# # print(d1, type(d1), id(d1))
+# d1["immutable"] = [4, 7]
+# print(d1, type(d1), id(d1))
+# d1[876] = d1
+# print(d1, type(d1), id(d1))
+# print(d1[876])
+
 
 # set
-set_example = set('змееед')
+set_example = set('змееед')  # mutable unordered object
 print(set_example)
+set1 = set()  # {} creates dict
+print(set1, type(set1))
+# print(set_example[3])  # no indexes in set ( set is unordered)
+last = set_example.pop()
+print(set_example)
+set_example.remove('е')
+print(set_example)
+set1.add(6)
+new_set = set_example.union(set1)
+print(new_set, type(new_set))
+
