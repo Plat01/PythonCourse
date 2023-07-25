@@ -18,7 +18,7 @@ def calk(a: int, b: int, operation='') -> int:  # def func_name(arg: arg_type...
     :param operation: operation name
     :return: result
     """
-    # print(globals())
+    print(globals())
     # print(a + b)
     # return a + b
     if operation == "sum":
@@ -28,8 +28,6 @@ def calk(a: int, b: int, operation='') -> int:  # def func_name(arg: arg_type...
     elif operation == "div":
         return a / b
     return 0
-
-
 
 
 # res = calk(4, 6, "mult")
@@ -46,12 +44,12 @@ if __name__ == '__main__':
     foo()
     res = calk(4, 6, "sum")
     print(res)
-    a = foo1("Dima")
-    print(a)
-    foo1("Roma")
-    print(globals())
-    print("Note from l5_function file")
-    calk("a", 3, "sum")
+    # a = foo1("Dima")
+    # print(a)
+    # foo1("Roma")
+    # print(globals())
+    # print("Note from l5_function file")
+    # calk("a", 3, "sum")
 
 # if banan == "banana":
 #     print("Banana")
