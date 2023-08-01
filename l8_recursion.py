@@ -1,13 +1,15 @@
 def fib(n: int):
     global counter
     counter += 1
-    if n == 1 or n == 2:
+    if n == 1:
         return 1
+    elif n == 0:
+        return 0
     else:
         return fib(n - 2) + fib(n - 1)
 
-
-num = 0
+# TODO: придумать как исправить костыль
+# num = 0
 try:
     num = int(input("input number of Fibonacci sequence: "))
     # after error we will go to "except" block
@@ -17,7 +19,8 @@ try:
 except ValueError as e:  # execute if error occurs
     print(e)
 finally:  # execute anyway
-    num = num if num else 0
+    # num = num if num else 0
+    num = globals().get('num', 0)
 
 print(num)
 
